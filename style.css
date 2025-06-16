@@ -1,0 +1,59 @@
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+main, section {
+    flex: 1 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.carousel img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    margin-top: auto;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        max-height: 300px;
+    }
+
+    .card img {
+        height: auto;
+    }
+}
